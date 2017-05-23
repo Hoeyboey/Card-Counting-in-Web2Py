@@ -1,0 +1,13 @@
+{{extend 'layout.html'}}
+{{=form}}
+<a href='/card_counting/default/second'>
+    Submit your hand!
+</a>
+
+<h1>
+    {{=session.held_hand}}
+</h1>
+
+<h2>
+    {{=response.toolbar()}}
+</h2>

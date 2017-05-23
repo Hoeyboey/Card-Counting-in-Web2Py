@@ -1,0 +1,14 @@
+{{extend 'layout.html'}}
+
+<p>
+    {{=session.box_1 or 'Hello'}}
+</p>
+
+<p>
+    The probability of drawing a card that does not bring you over 21 is: {{="{:.2f}%".format(session.probability_of_not_going_over_21)}}
+    {{if session.are_there_aces:}}The value of your hand if you count an ace as 11 is: {{=session.sum_if_making_ace_eleven}}. The probability of drawing a card that does not bring you over 21 if you count an ace in your hand as eleven is: {{="{:.2f}%".format(session.probability_of_not_going_over_21_if_ace_is_eleven)}}{{pass}}
+</p>
+
+<h2>
+    {{=response.toolbar()}}
+</h2>

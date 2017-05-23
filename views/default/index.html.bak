@@ -1,0 +1,6 @@
+{{extend 'layout.html'}}
+<a href='/card_counting/default/first'>
+    Start!
+</a>
+
+{{=response.toolbar()}}
